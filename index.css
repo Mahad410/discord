@@ -195,3 +195,11 @@ main {
 .box:nth-of-type(even) .pic {
     order: 2;
 }
+
+.b_box,
+.text {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
