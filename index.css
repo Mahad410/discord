@@ -243,7 +243,7 @@ main {
 }
 
 .down_btn button:hover {
-    opacity: 0.8;
+    background-color: #7289da;
     transition: ease-in-out 300ms;
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.342);
     cursor: pointer;
@@ -253,23 +253,21 @@ footer {
     margin-top: 140px;
     width: 100%;
     height: 500px;
-    border: 1px solid red;
     background-color: #23272a;
-    display: flex;
     justify-content: center;
     padding: 80px 40px 64px 40px;
     align-items: center;
+    overflow: hidden;
 }
 
 .in_footer {
     width: 1260px;
     position: sticky;
     bottom: 0;
-    border: 2px solid yellow;
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
 }
 
 .head h1 {
@@ -278,21 +276,97 @@ footer {
     color: #404eed;
     font-size: 2.5rem;
     font-weight: normal;
+    margin-bottom: 24px;
 }
 
-.eng_f {
+.inline {
+    display: flex;
+    cursor: pointer;
+}
+
+.icon {
     background-image: url(eng.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: auto;
-    height: auto;
+    width: 35px;
+    height: 18px;
 }
 
-select {
-    background-color: transparent;
-    border: transparent;
-    color: #fff;
+.lang p {
+    font-size: 15px;
+}
+
+.d_arrow {
+    background-image: url(down-arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 8px;
+    height: 8px;
+    filter: invert(100%);
+    margin: 5px;
+}
+
+.social {
+    margin-top: 24px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+}
+
+.twitter,
+.instagram,
+.facebook {
+    margin-right: 30px;
+}
+
+.link,
+.link p,
+.link a {
+    display: block;
+}
+
+.link p {
+    color: #404eed;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.link a {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.link a:hover {
+    text-decoration: underline #fff;
+}
+
+.h_line {
+    width: 100%;
+    height: 1px;
+    background-color: #5865f2;
+    grid-column: 1/6;
+    margin-top: 24px;
+}
+
+.o_footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/6;
+    margin-top: 24px;
+}
+
+.o_btn button {
+    float: right;
+    padding: 12px 16px;
+    background-color: #5865f2;
+    border: 1px transparent;
+    border-radius: 40px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.o_btn button:hover {
+    background-color: #7289da;
+    transition: ease-in-out 300ms;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.342);
+    cursor: pointer;
 }
