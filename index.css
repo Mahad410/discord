@@ -171,24 +171,24 @@ main {
 }
 
 .box .text {
-    color: #000;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
 }
 
-.text h1 {
+.box .text h1 {
     font-size: 45px;
     font-weight: 800;
     line-height: 120%;
-    color: #262627;
+    color: #23272a;
 }
 
-.text p {
+.box .text p {
     margin-top: 24px;
     font-size: 1.1rem;
-    color: #313133;
+    /* color: #313133; */
+    color: #23272a;
     letter-spacing: 1.5px;
     line-height: 30px;
 }
@@ -208,6 +208,7 @@ main {
 .b_box .text h1 {
     font-family: 'Sigmar One', cursive;
     font-size: 50px;
+    color: #23272a;
 }
 
 .b_box .text p {
@@ -219,6 +220,7 @@ main {
     margin-top: -30px;
     color: #000;
     font-family: sans-serif;
+    font-weight: 800;
 }
 
 .down_btn {
