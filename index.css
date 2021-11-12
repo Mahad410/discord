@@ -166,8 +166,8 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 100px;
-    margin-bottom: 200px;
     padding: 0px 40px;
+    margin-bottom: 50px;
 }
 
 .box .text {
@@ -446,11 +446,9 @@ footer {
         width: 0%;
     }
     .shoes svg {
-        position: absolute;
         left: 50%;
         transform: translateX(-60%);
         width: 80%;
-        height: auto;
     }
     .juice svg {
         width: 0%;
@@ -458,16 +456,10 @@ footer {
     .intro {
         margin-top: 25px;
         width: 100%;
-        height: 189px;
-        margin-left: auto;
-        margin-right: auto;
         text-align: left;
-        position: relative;
-        z-index: 1;
         padding: 20px;
     }
     .intro h1 {
-        font-family: 'Sigmar One', cursive;
         font-size: 38px;
     }
     .intro p {
@@ -488,7 +480,6 @@ footer {
     }
     .box {
         display: block;
-        margin-bottom: 80px;
         text-align: left;
         padding: 0 25px;
     }
@@ -500,7 +491,6 @@ footer {
         line-height: normal;
         text-align: left;
         margin-top: 20px;
-        font-weight: 800;
     }
     .box .text p {
         font-size: 0.9rem;
@@ -536,10 +526,6 @@ footer {
     }
     .down_btn {
         margin-top: 40px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
     }
     .down_btn button {
         width: 90vw;
@@ -573,7 +559,7 @@ footer {
 
 @media screen and (max-width: 685px) {
     header {
-        height: 695PX;
+        height: 695px;
     }
     .shoes svg {
         width: 100%;
@@ -604,10 +590,6 @@ footer {
     }
     .down_btn {
         margin-top: 40px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
     }
     .down_btn button {
         width: 90vw;
