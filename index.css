@@ -19,10 +19,10 @@ header {
 .navbar {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1260px;
     width: 100%;
     height: 80px;
-    padding: 0px 40px;
+    padding: 0px 150px;
+    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -268,7 +268,7 @@ footer {
     height: 500px;
     background-color: #23272a;
     justify-content: center;
-    padding: 80px 40px 64px 40px;
+    padding: 80px 150px 64px 150px;
     align-items: center;
     overflow: hidden;
     box-sizing: border-box;
@@ -399,6 +399,9 @@ footer {
         line-height: 30px;
         margin-top: 10px;
     }
+    .navbar {
+        padding: 0 40px
+    }
     .btn {
         width: auto;
         display: inline-block;
@@ -423,6 +426,7 @@ footer {
     }
     footer {
         height: auto;
+        padding: 80px 40px 64px 40px;
     }
     .in_footer {
         width: 100%;
@@ -435,6 +439,9 @@ footer {
     }
     .menu a {
         display: none;
+    }
+    .navbar {
+        padding: 0 40px
     }
     .background {
         position: relative;
@@ -534,6 +541,7 @@ footer {
     footer {
         height: auto;
         width: 100%;
+        padding: 80px 40px 64px 40px;
     }
     .in_footer {
         grid-template-columns: 1fr 1fr;
@@ -560,6 +568,9 @@ footer {
 @media screen and (max-width: 685px) {
     header {
         height: 695px;
+    }
+    .navbar {
+        padding: 0 40px
     }
     .shoes svg {
         width: 100%;
