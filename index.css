@@ -275,7 +275,7 @@ footer {
 }
 
 .in_footer {
-    width: 1260px;
+    width: auto;
     position: sticky;
     bottom: 0;
     margin-left: auto;
@@ -536,7 +536,6 @@ footer {
         width: 100%;
     }
     .in_footer {
-        width: 100%;
         grid-template-columns: 1fr 1fr;
     }
     .social {
@@ -594,29 +593,5 @@ footer {
     }
     .down_btn button {
         width: 90vw;
-    }
-    footer {
-        height: auto;
-    }
-    .in_footer {
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-    }
-    .social {
-        margin-bottom: 30px;
-        grid-column: 1/6;
-    }
-    .head h1 {
-        margin-bottom: 24px;
-    }
-    .head {
-        grid-column: 1/6;
-    }
-    .link:nth-child(even) {
-        grid-column: 1/2;
-        margin-top: 0px;
-    }
-    .link {
-        margin: auto 20px;
     }
 }
