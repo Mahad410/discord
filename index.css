@@ -199,7 +199,7 @@ main {
 .box:nth-of-type(even),
 .b_box {
     background-color: #f6f6f6;
-    padding: 50px 40px 0px;
+    padding: 50px 40px 50px 40px;
 }
 
 .b_box,
@@ -571,7 +571,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 685px) {
     header {
         height: 695PX;
     }
