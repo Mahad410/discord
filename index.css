@@ -276,8 +276,6 @@ footer {
 
 .in_footer {
     width: auto;
-    position: sticky;
-    bottom: 0;
     margin-left: auto;
     margin-right: auto;
     display: grid;
