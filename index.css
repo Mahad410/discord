@@ -7,6 +7,7 @@
 body {
     color: #fff;
     font-family: sans-serif;
+    font-display: swap;
 }
 
 header {
@@ -19,7 +20,7 @@ header {
 .navbar {
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 90%;
     height: 80px;
     padding: 0px 150px;
     display: flex;
@@ -610,4 +611,108 @@ footer {
     .navbar {
         padding: 0 25px
     }
+}
+
+
+/* extra */
+
+.ham {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 0;
+    margin: 0 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.menuX {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+}
+
+.sideNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    background: #f6f6f6;
+    width: 300px;
+    height: 100vh;
+    overflow: hidden;
+    color: #000;
+    /* hide the menu above the screen by default */
+    transform: translateX(100%);
+    transition: transform 0.2s ease;
+}
+
+.showNav {
+    transform: translateX(0);
+}
+
+.sideNav ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.sideNav ul li a {
+    display: block;
+    color: white;
+    padding-bottom: 10px;
+    margin-top: 1rem;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.sideNav ul li a:hover,
+.sideNav ul li a:focus {
+    border-bottom: 2px solid white;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+}
+
+.showOverlay {
+    display: block;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(even) {
+    background-color: rgb(245, 245, 245);
 }

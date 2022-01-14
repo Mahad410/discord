@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
     <link rel="shortcut icon" type="icon/png" href="discord.png">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,16 +48,35 @@
                         Blog
                     </a>
                 </div>
-                 <!-- login button -->
-                 <div class="btn_login">
+                <!-- login button -->
+                <div class="btn_login">
                     <a href="https://mahad410.github.io/discordlogin/">
                         <button type="button">
                             login
                         </button>
                     </a>
                 </div>
-               
+                <button class="ham">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
             </div>
+        </nav>
+
+        <div class="overlay"></div>
+        <nav class="sideNav">
+            <button class="menuX">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+            <ul>
+                <li><a class="menuLink" href="#home">Home</a></li>
+                <li><a class="menuLink" href="#profile">Profile</a></li>
+                <li><a class="menuLink" href="#about">About</a></li>
+                <li><a class="menuLink" href="#contacts">Contacts</a></li>
+            </ul>
         </nav>
 
 
@@ -1951,7 +1971,6 @@
         });
     </script>
     <script src="index.js">
-
     </script>
 </body>
 
