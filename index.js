@@ -1,18 +1,21 @@
-const sideNav = document.querySelector(".sideNav")
-const overlay = document.querySelector(".overlay")
-const ham = document.querySelector(".ham")
-const menuX = document.querySelector(".menuX")
-const menuItems = document.querySelectorAll(".menuLink")
-
-menuItems.forEach(menuItem => {
-    menuItem.addEventListener("click", toggleHamburger)
-})
-
-ham.addEventListener("click", toggleHamburger)
-menuX.addEventListener("click", toggleHamburger)
-overlay.addEventListener("click", toggleHamburger)
+const sideNav = document.querySelector(".sideNav");
+const overlay = document.querySelector(".overlay");
+const ham = document.querySelector(".ham");
+const x = document.querySelector(".x");
+ham.addEventListener("click", toggleHamburger);
+x.addEventListener("click", toggleHamburger);
+overlay.addEventListener("click", toggleHamburger);
 
 function toggleHamburger() {
-    overlay.classList.toggle("showOverlay")
-    sideNav.classList.toggle("showNav")
+    overlay.classList.toggle("showOverlay");
+    sideNav.classList.toggle("showNav");
+}
+
+const ham_men = document.querySelector('.ham>svg');
+const r_size = window.onresize = () => {
+    if (window.innerWidth <= '786') {
+        ham_men.style.display = 'block';
+    } else {
+        ham_men.style.display = 'none';
+    }
 }
