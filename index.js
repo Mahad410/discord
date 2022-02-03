@@ -10,7 +10,11 @@ function toggleHamburger() {
     overlay.classList.toggle("showOverlay");
     sideNav.classList.toggle("showNav");
 }
-
+if (window.innerWidth <= '786') {
+    ham_men.style.display = 'block';
+} else {
+    ham_men.style.display = 'none';
+}
 const ham_men = document.querySelector('.ham>svg');
 const r_size = window.onresize = () => {
     if (window.innerWidth <= '786') {
