@@ -9,6 +9,7 @@ overlay.addEventListener("click", toggleHamburger);
 function toggleHamburger() {
     overlay.classList.toggle("showOverlay");
     sideNav.classList.toggle("showNav");
+
 }
 const ham_men = document.querySelector('.ham>svg');
 const r_size = window.onresize = () => {
