@@ -634,7 +634,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     top: 2rem;
-    right: 0;
+    right: 1.5%;
     left: 0;
     margin: 0 10px 0 20px;
     background: none;
@@ -655,7 +655,7 @@ footer {
     z-index: 101;
     background: #f6f6f6;
     width: 60%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     color: #000;
     transform: translateX(100%);
