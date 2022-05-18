@@ -432,7 +432,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 780px) {
     header {
         height: 695PX;
     }
